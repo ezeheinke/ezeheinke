@@ -8,7 +8,7 @@ If you’ve landed here, we probably work together or might end up working toget
 
 I have a great sense of humor, and by default, I never take anything personally. Jokes (especially dad jokes) and memes are always welcome. Having lived in the UK for many years, I’ve developed a tendency for self-deprecating humor and casual chitchat about the weather.
 
-## Cheerful (Mmst days)
+## Cheerful (Most days)
 I’m a positive person and tend to cheer people up when times are tough. But even superheroes need a break! If I’m not in my usual good mood, give me a bit of time to recharge.
 
 ## Pragmatic (with some caveats)
@@ -17,8 +17,9 @@ I’m flexible and usually favor the least painful solution. However, if the pro
 ## Feedback reception
 I’m always striving to grow and improve, and feedback is crucial for that. If you notice something I could do differently, do better, or perhaps stop doing altogether, feel free to have an open discussion with me or drop me a DM.
 
-## Participation style
-In meetings, I’m not always the most vocal person. Please don’t mistake my quietness for disengagement. Depending on the day and how inspired I feel, I might contribute more or less. Sometimes, I lead discussions; other times, I take a backseat to listen. I also like adding thoughts asynchronously when the time feels right.
+## Extrovert
+I’m definitely more of an extrovert than an introvert. When I go to the office, I enjoy having lunch together, grabbing a coffee, and connecting with people. I love getting to know more about my colleagues, not just their work or favorite programming language!
+
 
 # How I work
 
@@ -28,6 +29,9 @@ When asking for someone’s help or opinion, I typically provide context in a me
 
 ## Direct communication
 Over the years, I’ve become accustomed to working remotely, including asynchronously, so clear and concise text messages are crucial for me. If there’s no time for that, a quick call is better than poorly written messages. Additionally, sending non-urgent messages outside of work hours, especially when tools like Slack and Gmail have scheduling options, can be a bit disappointing. 😉
+
+## Participation style
+In meetings, I’m not always the most vocal person. Please don’t mistake my quietness for disengagement. Depending on the day and how inspired I feel, I might contribute more or less. Sometimes, I lead discussions; other times, I take a backseat to listen. I also like adding thoughts asynchronously when the time feels right.
 
 ## Whiteboard discussions
 For complex solutions, potentially “dirty” (code- or architecture-wise) ideas, or anything with long-lasting impact, I’m always up for brainstorming. Whether it’s a whiteboard, Excalidraw, FigJam, or another tool, let’s figure out the details, trade-offs, and the best path forward together.
