@@ -1,0 +1,26 @@
+{
+  "name": "cookie-authentication",
+  "description": "this is a sample project to show how we can implement a secure magic link login for an app.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.10.2"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.3.0",
+    "cookie": "^1.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^3.24.1"
+  }
+}
