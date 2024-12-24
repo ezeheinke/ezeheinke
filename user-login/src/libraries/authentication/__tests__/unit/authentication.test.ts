@@ -37,7 +37,7 @@ describe("Authentication", () => {
         // For TS to know that is a failure.
         if (result.status === "failure") {
           expect(result.error).toMatchObject({
-            tag: "vendorAuthenticationError",
+            tag: "authenticationError",
             reason: "prismaWrapperError",
             error: {
               tag: "databaseError",
@@ -63,7 +63,7 @@ describe("Authentication", () => {
           expect(R.isFailure(result)).toBe(true);
           if (result.status === "failure") {
             expect(result.error).toMatchObject({
-              tag: "vendorAuthenticationError",
+              tag: "authenticationError",
               reason: "unknownRequester",
               error: {
                 tag: "databaseError",
@@ -77,15 +77,15 @@ describe("Authentication", () => {
 
       describe("when the token is expired", () => {
         it("should return appropriate failure", async () => {
-          const vendorAccess = generateUserToken({
+          const userToken = generateUserToken({
             expiresAt: dayjs(new Date()).subtract(1, "hour").toDate(),
           });
           mockedUserTokenRepo.getUserByHashedToken.mockResolvedValueOnce(
             R.toSuccess({
-              email: vendorAccess.email,
-              hashedToken: vendorAccess.hashedToken,
-              expiresAt: vendorAccess.expiresAt,
-              isDeleted: !!vendorAccess.deletedAt,
+              email: userToken.email,
+              hashedToken: userToken.hashedToken,
+              expiresAt: userToken.expiresAt,
+              isDeleted: !!userToken.deletedAt,
             })
           );
 
@@ -94,10 +94,10 @@ describe("Authentication", () => {
 
           if (result.status === "failure") {
             expect(result.error).toMatchObject({
-              tag: "vendorAuthenticationError",
+              tag: "authenticationError",
               reason: "tokenExpired",
               error: {
-                email: vendorAccess.email,
+                email: userToken.email,
               },
             });
           }
