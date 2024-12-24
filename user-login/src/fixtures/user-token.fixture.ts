@@ -1,4 +1,7 @@
-import { UserTokenDb } from "@lib/repositories/user-token/types";
+import {
+  UserTokenDb,
+  UserTokenDomain,
+} from "@lib/repositories/user-token/types";
 import { PartialGeneratorFn } from "./utils";
 import { faker } from "@faker-js/faker";
 

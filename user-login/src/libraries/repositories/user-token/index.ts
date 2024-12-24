@@ -21,7 +21,7 @@ const getUserByHashedToken = async (
   hashedToken: string
 ): Promise<R.Result<DatabaseError, UserTokenDomain>> => {
   try {
-    // call to ORM
+    // call to ORM => check if exists and deleted_at is not null
     const dbUserToken = generateUserToken();
 
     if (!dbUserToken) {

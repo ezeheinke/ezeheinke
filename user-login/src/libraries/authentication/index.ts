@@ -33,6 +33,15 @@ const identifyAndConsumeToken: UserAuthentication["identifyAndConsumeToken"] =
         hashedToken
       );
       if (R.isFailure(getUserByHashedTokenResult)) {
+        
+        if (getUserByHashedTokenResult.error.reason === "noDataFound") {
+          return R.toFailure(
+            toAuthenticationError({
+              reason: "unknownRequester",
+              error: getUserByHashedTokenResult.error,
+            })
+          );
+        }
         return R.toFailure(
           toAuthenticationError({
             reason: "databaseError",
