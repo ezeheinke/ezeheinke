@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "pretty": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "newLine": "lf",
+    "noFallthroughCasesInSwitch": true,
+    "useDefineForClassFields": true,
+    "skipLibCheck": true,
+    "lib": ["esnext"],
+    "target": "ES2021",
+    "declaration": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "outDir": "./build",
+    "rootDir": "./src",
+    "noUnusedLocals": false,
+    "forceConsistentCasingInFileNames": false,
+    "noUncheckedIndexedAccess": true,
+    "paths": {
+      "@lib/*": ["./src/libraries/*"]
+    }
+  },
+  "watchOptions": {
+    "watchFile": "fixedPollingInterval",
+    "watchDirectory": "fixedPollingInterval",
+    "fallbackPolling": "dynamicPriority",
+    "synchronousWatchDirectory": true,
+    "excludeDirectories": ["**/node_modules", "./build"]
+  },
+  "include": ["./src"],
+  "exclude": ["./build", "scripts"]
+}
