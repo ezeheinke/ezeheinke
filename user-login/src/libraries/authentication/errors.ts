@@ -7,7 +7,7 @@ type AuthenticationErrorReason =
   | "unknownRequester";
 
 export type AuthenticationError = {
-  tag: "AuthenticationFailed";
+  tag: "authenticationFailed";
   reason: AuthenticationErrorReason;
   error: unknown;
 };
@@ -19,7 +19,7 @@ export const toAuthenticationError = ({
   error: unknown;
   reason: AuthenticationErrorReason;
 }): AuthenticationError => ({
-  tag: "AuthenticationFailed",
+  tag: "authenticationFailed",
   reason,
   error,
 });
